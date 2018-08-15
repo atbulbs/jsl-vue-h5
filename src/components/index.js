@@ -12,5 +12,3 @@ export const JslLoading = {
 export default {
   JslLoading
 }
-
-
