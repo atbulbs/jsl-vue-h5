@@ -1,6 +1,6 @@
 {
   "name": "jsl-vue-h5",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "a Vue.js loading plugin for mobile H5 development",
   "author": "8bulbs <atbulbs@gmail.com>",
   "private": false,

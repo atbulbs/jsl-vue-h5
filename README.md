@@ -11,7 +11,7 @@ $ npm install jsl-vue-h5 --save
 ```javascript
 // main.js
 import Vue from 'vue'
-import JslLoading from 'jsl-vue-h5'
+import { JslLoading } from 'jsl-vue-h5'
 import 'jsl-vue-h5/dist/jsl-vue-h5.min.css'
 
 Vue.use(JslLoading)
