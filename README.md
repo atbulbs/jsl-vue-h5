@@ -1,11 +1,11 @@
-# a JasonLiao project: jsl-vue-h5-loading
-> 一个vue的H5 loading组件, 按照375px宽度的UI图构建, 会转换为vw
+# a JasonLiao project: jsl-vue-h5
+> 一个vue的H5组件/插件库, 按照375px宽度的UI图构建, 会转换为vw
 
-> npm site: [https://www.npmjs.com/package/jsl-vue-h5-loading](https://www.npmjs.com/package/jsl-vue-h5-loading)
+> npm site: [https://www.npmjs.com/package/jsl-vue-h5](https://www.npmjs.com/package/jsl-vue-h5)
 
 ## install
 ```bash
-$ npm install jsl-vue-h5-loading --save
+$ npm install jsl-vue-h5 --save
 ```
 ## example
 ```javascript
