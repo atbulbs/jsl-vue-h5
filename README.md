@@ -1,39 +1,46 @@
-# 8bulbs-project webpack-vue
-> 模块化强迫症:joy:的webpack-vue配置,采用最新的webpack v-4.16和vue-loader v-15.3, 开箱:package:即用, 引入vw适配和wechat-js-sdk,二次封装axios,更高效:rocket:更激爽:kiss:的构建H5项目
+# a JasonLiao project: jsl-vue-h5-loading
+> 一个vue的H5 loading组件, 按照375px宽度的UI图构建, 会转换为vw
 
-## build with the latest dependencies version
+> npm site: [https://www.npmjs.com/package/jsl-vue-h5-loading](https://www.npmjs.com/package/jsl-vue-h5-loading)
 
-``` bash
-# install ncu at global
-$ npm install -g npm-check-updates
-
-# use ncu
-$ ncu -a
-
-# install dependencies
-$ npm install
-
-# run the develop server
-$ npm start
-
-# build for production with minification
-$ npm run build
-
-```
-## to deploy your project (proxy and history mode is surported)
-
+## install
 ```bash
-# change directory
-$ cd deploy-server
-
-# install dependencies
-$ npm install
-
-# install pm2 at global to manager your production process
-$ npm install pm2 -g
-
-# run the deploy server with pm2
-$ pm2 start server.js --watch
-
+$ npm install jsl-vue-h5-loading --save
 ```
+## example
+```javascript
+// main.js
+import Vue from 'vue'
+import JslLoading from 'jsl-vue-h5'
+import 'jsl-vue-h5/dist/jsl-vue-h5.min.css'
+
+Vue.use(JslLoading)
+
+// jsl-loading-demo.vue
+<template>
+ <div class="root">
+   <jsl-loading />
+ </div>
+</template>
+```
+
+## documentation
+### jsl-loading
+>API
+
+| props | type | remark | default value |
+|:-----:|:----:|:------:|:-------------:|
+| rootWidth |  Number | 组件的宽度 | 250 |
+| rootHeight |  Number | 组件的高度 | 250 |
+| rootTop |  Number | 组件相对已定位父级的top | 157 |
+| imgUrl |  String | 图片资源 | 经典的菊花图 |
+| imgSize |  Number | 图片的高宽 | 35 |
+| imgMargin |  String | 图片的margin | '5vw auto' |
+| infoContent |  String | 文字信息 | '正在加载数据...' |
+| infoColor |  String | 文字颜色 | '#333' |
+| infoFontSize |  Number | 文字大小 | 14 |
+| infoHeight |  Number | 文字高度 | 25 |
+| infoLineHeight |  Number | 文字行高 | 25 |
+
+
 

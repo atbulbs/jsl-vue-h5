@@ -4,8 +4,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 const prodPlugins = [
   new MiniCssExtractPlugin({
-    filename: '[name].[chunkhash:8].css',
-    chunkFilename: '[id].css'
+    filename: 'jsl-vue-h5.min.css'
   }),
   new webpack.NamedChunksPlugin()
 ]

@@ -2,18 +2,16 @@ const resolve = require('../utils/resolve')
 const isDev = require('../utils/isDev')
 
 const resolveConfig = {
-  extensions: ['.js', '.vue', '.json', '.jsx'],
+  extensions: ['.js', '.vue', '.styl', '.json', '.jsx'],
   alias: {
     'vue': isDev ? 'vue/dist/vue.js' : 'vue/dist/vue.runtime.min.js',
     '@': resolve('src'),
-    'pages': resolve('src/pages'),
-    'api': resolve('src/api'),
     'components': resolve('src/components'),
-    'base-components': resolve('src/base-components'),
+    'pages': resolve('src/pages'),
     'js': resolve('src/assets/js'),
+    'libs': resolve('src/libs'),
     'styles': resolve('src/assets/styles'),
-    'images': resolve('src/assets/images'),
-    'libs': resolve('src/libs')
+    'images': resolve('src/assets/images')
   }
 }
 

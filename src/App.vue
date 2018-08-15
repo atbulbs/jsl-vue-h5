@@ -7,20 +7,13 @@
 </template>
 
 <script>
-import Home from 'pages/home'
 export default {
-  name: 'App',
-  components: {
-    Home
-  }
+  name: 'App'
 }
 </script>
 
 
 <style scoped lang="stylus" rel="stylesheet/stylus">
-.app-main
-  width 100%
-  height 100%
-  font-size 14px
+
 </style>
 

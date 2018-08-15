@@ -1,11 +1,9 @@
 import routes from './routes'
-import scrollBehavior from './scrollBehavior'
 
 const RouterConfig = {
   mode: 'history',
-  base: '/base-url/',
-  routes,
-  scrollBehavior
+  base: '/jsl-vue-h5/',
+  routes
 }
 
 export default RouterConfig

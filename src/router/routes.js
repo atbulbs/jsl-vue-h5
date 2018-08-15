@@ -1,6 +1,7 @@
-const Home = () => import('pages/home.vue')
-const List = () => import('pages/list.vue')
-const Item = () => import('pages/item.vue')
+const Home = () => import('pages/home')
+const List = () => import('pages/list')
+const Item = () => import('pages/item')
+const LoadingDemo = () => import('pages/loading-demo')
 
 export default [
   {
@@ -11,6 +12,11 @@ export default [
     path: '/home',
     name: 'home',
     component: Home
+  },
+  {
+    path: '/loading-demo',
+    name: 'loading-demo',
+    component: LoadingDemo
   },
   {
     path: '/list/:id',
