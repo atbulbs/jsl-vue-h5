@@ -1,6 +1,6 @@
 {
   "name": "jsl-vue-h5",
-  "version": "0.0.3",
+  "version": "0.0.8",
   "description": "some Vue.js components and plugins for mobile H5 development",
   "author": "8bulbs <atbulbs@gmail.com>",
   "private": false,
@@ -10,7 +10,7 @@
     "start": "npm run dev",
     "build": "npm run clean && npm run build:dev",
     "build:dev": "cross-env NODE_ENV=production webpack --config build/webpack.config.js",
-    "clean": "rimraf dist && rimraf dist.zip",
+    "clean": "rimraf dist && rimraf dist.zip && rimraf *.tgz",
     "lint": "eslint --ext .js --ext .jsx --ext .vue src/",
     "lint-fix": "eslint --fix --ext .js --ext .jsx --ext .vue src/",
     "precommit": "npm run lint-fix"

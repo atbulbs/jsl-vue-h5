@@ -1,3 +1,5 @@
+import 'styles/components/index'
+
 import loadingComponent from './loading/loading'
 
 export const JslLoading = {

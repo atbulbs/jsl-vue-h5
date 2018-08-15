@@ -115,6 +115,7 @@ export default {
 <style scoped lang="stylus" rel="stylesheet/stylus">
 @import '~styles/components/index'
 .loading-root
-  text-align center
   top-center()
+  > .info
+    tac()
 </style>
