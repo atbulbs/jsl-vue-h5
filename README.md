@@ -1,5 +1,5 @@
 # a JasonLiao project: jsl-vue-h5
-> 一个vue的H5组件/插件库, 按照375px宽度的UI图构建, 会转换为vw
+> 一个vue的H5组件与插件库, 按照375px宽度的UI图构建, 会转换为vw, 可按需引入
 
 > npm site: [https://www.npmjs.com/package/jsl-vue-h5](https://www.npmjs.com/package/jsl-vue-h5)
 
