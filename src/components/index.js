@@ -1,16 +1,16 @@
 import 'styles/components/index'
+import { createVuePlugin } from 'libs/util'
 
-import loadingComponent from './loading/loading'
+import LoadingComponent from './loading/loading'
+import NavbarComponent from './navbar/navbar'
+import NomoreTipComponent from './nomore-tip/nomore-tip'
 
-export const JslLoading = {
-  install: function (Vue) {
-    if (typeof window !== 'undefined' && window.Vue) {
-      Vue = window.Vue
-    }
-    Vue.component('JslLoading', loadingComponent)
-  }
-}
+export const JslLoading = createVuePlugin('JslLoading', LoadingComponent)
+export const JslNavBar = createVuePlugin('JslNavBar', NavbarComponent)
+export const JslNomoreTip = createVuePlugin('JslNomoreTip', NomoreTipComponent)
 
 export default {
-  JslLoading
+  JslLoading,
+  JslNavBar,
+  JslNomoreTip
 }

@@ -17,3 +17,14 @@ export function formatQuery (obj) {
   })
   return result
 }
+
+export function createVuePlugin (vuePugingName, vuePulugin) {
+  return {
+    install: function (Vue) {
+      if (typeof window !== 'undefined' && window.Vue) {
+        Vue = window.Vue
+      }
+      Vue.component(vuePugingName, vuePulugin)
+    }
+  }
+}

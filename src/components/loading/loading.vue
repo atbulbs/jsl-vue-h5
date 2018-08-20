@@ -6,6 +6,7 @@
   </div>
 </template>
 
+
 <script type="text/ecmascript-6">
 import { toVw } from 'libs/util'
 import loadingImg from './loading.gif'
@@ -81,14 +82,11 @@ export default {
   },
   methods: {
     init () {
-      console.log('init')
       this.initImg()
       this.initRoot()
       this.initInfo()
     },
     initRoot () {
-      console.log('init root')
-      console.log('this.$widthRatio', this.$widthRatio)
       this.rootStyle.width = toVw(this.rootWidth)
       this.rootStyle.height = toVw(this.rootHeight)
       this.rootStyle.top = toVw(this.rootTop)
@@ -112,10 +110,11 @@ export default {
 }
 </script>
 
+
 <style scoped lang="stylus" rel="stylesheet/stylus">
 @import '~styles/components/index'
 .loading-root
   top-center()
-  > .info
+  >.info
     tac()
 </style>

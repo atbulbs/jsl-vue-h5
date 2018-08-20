@@ -1,15 +1,15 @@
 <template>
  <div class="root">
-   <jsl-loading/>
+   <jsl-navbar/>
  </div>
 </template>
 
 
 <script type="text/ecmascript-6">
-import JslLoading from 'components/loading/loading'
+import JslNavbar from 'components/navbar/navbar'
 export default {
   components: {
-    JslLoading
+    JslNavbar
   }
 }
 </script>

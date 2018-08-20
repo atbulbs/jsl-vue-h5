@@ -1,19 +1,22 @@
 <template>
- <div>
-   it is home page
-   <div @click="handleClick">
-     <button>to list page</button>
+ <div class="home-root">
+   <div class="avatar">
+   </div>
+   <p class="welcome title">
+     welcome to jsl-vue-h5
+   </p>
+   <p class="welcome">
+     a vue.js components/plugins library for h5 devlopment
+   </p>
+   <div class="to-list" @click="handleClick">
+     click to demo list page
    </div>
  </div>
 </template>
 
+
 <script type="text/ecmascript-6">
  export default {
-   data () {
-     return {
-
-     }
-   },
    methods: {
      handleClick () {
        this.$router.push({
@@ -23,24 +26,28 @@
          }
        })
      }
-   },
-   components: {
-
-   },
-   beforeRouteLeave (to, from, next) {
-     console.log('home to', to)
-     console.log('home from', from)
-     const answer = window.confirm('请保存更改再离开主页')
-     if (answer) {
-       next()
-     } else {
-       next(false)
-     }
    }
  }
 </script>
 
+
 <style scoped lang="stylus" rel="stylesheet/stylus">
-
-
+@import '~styles/mixin'
+.home-root
+  >.avatar
+    with-bg(150px, 170px, '../assets/images/avatar.jpg')
+    margin 10px auto
+  >.title
+    font-weight bold
+  >.welcome
+    tac()
+  >.to-list
+    margin 10px auto
+    tac()
+    width 375px
+    height 35px
+    line-height 35px
+    background linear-gradient(#CD3333 0%, #CD3700 50%, #CD3333 100%)
+    border-radius 7px
+    color #fff
 </style>

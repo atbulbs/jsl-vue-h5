@@ -10,6 +10,7 @@
  </div>
 </template>
 
+
 <script type="text/ecmascript-6">
 export default {
   data () {
@@ -25,21 +26,18 @@ export default {
   },
   watch: {
     '$route' (to, from) {
-      console.log('to.path', to.path)
-      console.log('from.path', from.path)
       const toDepth = to.path.split('/').length
       const fromDepth = from.path.split('/').length
       this.transitionName = toDepth < fromDepth ? 'slide-right' : 'slide-left'
     }
   },
   beforeRouteEnter (to, from, next) {
-    console.log('list from', from)
     next((vm) => {
-      console.log('vm', vm)
     })
   }
 }
 </script>
+
 
 <style scoped lang="stylus" rel="stylesheet/stylus">
 .root
