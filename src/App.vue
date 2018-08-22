@@ -3,9 +3,10 @@
     <jsl-navbar
       v-show="isNavBarShow"
       :title="title"
+      @click.native="$router.go(-1)"
     />
-    <transition>
-      <router-view></router-view>
+    <transition :name="transitionName">
+      <router-view class="child-view"></router-view>
     </transition>
   </div>
 </template>
@@ -18,21 +19,23 @@ export default {
   data () {
     return {
       isNavBarShow: false,
-      title: ''
+      title: '',
+      transitionName: 'slide-left'
     }
   },
   watch: {
     '$route': {
-      handler (newValue) {
-        console.log('newValue', newValue)
-        if (newValue.name && newValue.name !== 'home') {
+      handler (to, from) {
+        const toDepth = to.path.split('/').length
+        const fromDepth = from.path.split('/').length
+        this.transitionName = toDepth < fromDepth ? 'slide-right' : 'slide-left'
+        if (to.name !== 'home') {
           this.isNavBarShow = true
-          this.title = newValue.meta.title
+          this.title = to.meta.title
         } else {
           this.isNavBarShow = false
         }
-      },
-      immediate: true
+      }
     }
   },
   components: {
@@ -43,6 +46,21 @@ export default {
 
 
 <style scoped lang="stylus" rel="stylesheet/stylus">
+@import '~styles/mixin'
 
+.app-main
+  full-screen()
+  >.child-view
+    position absolute
+    width 375px
+    transition all .5s linear
+  >.slide-left-enter
+    transform translateX(375px)
+  >.slide-left-enter-to
+    transform translateX(0)
+  >.slide-left-leave
+    transform translateX(0px)
+  >.slide-left-leave-to
+    transform translateX(-375px)
 </style>
 

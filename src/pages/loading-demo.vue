@@ -1,5 +1,5 @@
 <template>
- <div class="root">
+ <div class="loading-demo-root">
    <jsl-loading/>
  </div>
 </template>
@@ -17,7 +17,9 @@ export default {
 
 <style scoped lang="stylus" rel="stylesheet/stylus">
 @import '~styles/mixin'
-.root
-  full-screen()
-  position relative
+
+.loading-demo-root
+  width 375px
+  height 623px
+  position absolute
 </style>

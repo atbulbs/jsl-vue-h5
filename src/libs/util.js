@@ -1,5 +1,5 @@
 export function toVw (num) {
-  return ((num.toFixed(5) / 375) * 100).toFixed(5) + 'vw'
+  return ((window.Number(num).toFixed(5) / 375) * 100).toFixed(5) + 'vw'
 }
 
 export function getLocal (str) {

@@ -19,6 +19,7 @@ export default {
 
 
 <style scoped lang="stylus" rel="stylesheet/stylus">
+@import "~styles/components/theme"
 @import "~styles/mixin"
 
 .jsl-navbar-root
@@ -26,13 +27,13 @@ export default {
   text-align center
   text-line(44px, 18px)
   position relative
-  background-color #fff
+  background-color $color-theme
   >.back
     with-bg(9px, 17px, './back-arrow.png')
-    absolute-left(18px)
+    ab-l(18px)
     extend-click()
   >.title
-    color #1F2845
+    color #fff
     letter-spacing -0.43px
     font-size 18px
     font-weight 600

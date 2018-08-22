@@ -112,9 +112,10 @@ export default {
 
 
 <style scoped lang="stylus" rel="stylesheet/stylus">
-@import '~styles/components/index'
+@import '~styles/mixin'
+  
 .loading-root
-  top-center()
+  ab-c()
   >.info
     tac()
 </style>

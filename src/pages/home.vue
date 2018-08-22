@@ -1,38 +1,45 @@
 <template>
- <div class="home-root">
-   <div class="avatar">
-   </div>
-   <p class="welcome title">
-     welcome to jsl-vue-h5
-   </p>
-   <p class="welcome">
-     a vue.js components/plugins library for h5 devlopment
-   </p>
-   <div class="to-list" @click="handleClick">
-     click to demo list page
-   </div>
+<div class="home-root">
+  <div class="avatar">
+  </div>
+  <p class="welcome title">
+    welcome to jsl-vue-h5
+  </p>
+  <p class="welcome">
+    a vue.js components/plugins library for h5 devlopment
+  </p>
+  <jsl-button
+    text="click to demo list page"
+    @click.native="$router.push({ name: 'list' })"
+  />
  </div>
 </template>
 
 
 <script type="text/ecmascript-6">
- export default {
-   methods: {
-     handleClick () {
-       this.$router.push({
-         name: 'list',
-         params: {
-           id: 9527
-         }
-       })
-     }
-   }
- }
+import JslButton from 'components/button/button'
+
+export default {
+  methods: {
+    handleClick () {
+      this.$router.push({
+        name: 'list',
+        params: {
+          id: 9527
+        }
+      })
+    }
+  },
+  components: {
+    JslButton
+  }
+}
 </script>
 
 
 <style scoped lang="stylus" rel="stylesheet/stylus">
 @import '~styles/mixin'
+
 .home-root
   >.avatar
     with-bg(150px, 170px, '../assets/images/avatar.jpg')

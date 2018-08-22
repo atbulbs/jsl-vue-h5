@@ -1,46 +1,42 @@
 <template>
- <div class="root">
-    <H2>it is list page, id : {{id}}, metaData : {{metaData}}</H2>
-    <div @click="$router.push({ name: 'home'})">
-      <button>to home page</button>
-    </div>
-    <transition :name="transitionName">
-      <router-view class="child-view"></router-view>
-    </transition>
- </div>
+  <div class="list-root">
+    <jsl-button
+      class="demo-list"
+      v-for="(item, index) in demoList"
+      :key="index + 'demo'"
+      :text="item"
+      @click.native="$router.push({ name: item })"
+    />
+  </div>
 </template>
 
 
 <script type="text/ecmascript-6">
+import JslButton from 'components/button/button'
+
 export default {
   data () {
     return {
-      id: '',
-      metaData: '',
-      transitionName: 'slide-left'
+      demoList: [
+        'avatar-demo',
+        'button-demo',
+        'close-demo',
+        'loading-demo',
+        'navbar-demo'
+      ]
     }
   },
-  mounted () {
-    this.id = this.$route.params.id
-    this.metaData = this.$router.currentRoute.meta.metaData
-  },
-  watch: {
-    '$route' (to, from) {
-      const toDepth = to.path.split('/').length
-      const fromDepth = from.path.split('/').length
-      this.transitionName = toDepth < fromDepth ? 'slide-right' : 'slide-left'
-    }
-  },
-  beforeRouteEnter (to, from, next) {
-    next((vm) => {
-    })
+  components: {
+    JslButton
   }
 }
 </script>
 
 
 <style scoped lang="stylus" rel="stylesheet/stylus">
-.root
-  height 2000px
-  color #333
+.list-root
+  full-screen()
+  position relative
+  >.demo-list
+    margin-top 20px
 </style>

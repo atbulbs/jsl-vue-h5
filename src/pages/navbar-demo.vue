@@ -1,5 +1,5 @@
 <template>
- <div class="root">
+ <div class="navbar-demo-root">
    <jsl-navbar/>
  </div>
 </template>
@@ -17,7 +17,8 @@ export default {
 
 <style scoped lang="stylus" rel="stylesheet/stylus">
 @import '~styles/mixin'
-.root
+.navbar-demo-root
   full-screen()
   position relative
+  padding-top 20px
 </style>
