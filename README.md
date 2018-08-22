@@ -3,6 +3,8 @@
 
 > npm site: [https://www.npmjs.com/package/jsl-vue-h5](https://www.npmjs.com/package/jsl-vue-h5)
 
+> code demo site: [https://www.npmjs.com/package/jsl-vue-h5-demo](https://www.npmjs.com/package/jsl-vue-h5-demo)
+
 ## 开发与发布的爬坑姿势
 
 生产时入口文件 src/components/index.js
@@ -150,11 +152,22 @@ $ npm install jsl-vue-h5 --save
 ## example
 ```javascript
 // main.js
-import Vue from 'vue'
-import { JslLoading } from 'jsl-vue-h5'
+import {
+  JslAvatar,
+  JslButton,
+  JslClose,
+  JslLoading,
+  JslNavBar,
+  JslNomoreTip
+} from 'jsl-vue-h5'
 import 'jsl-vue-h5/dist/jsl-vue-h5.min.css'
 
+Vue.use(JslAvatar)
+Vue.use(JslButton)
+Vue.use(JslClose)
 Vue.use(JslLoading)
+Vue.use(JslNavBar)
+Vue.use(JslNomoreTip)
 
 // jsl-loading-demo.vue
 <template>
@@ -165,6 +178,81 @@ Vue.use(JslLoading)
 ```
 
 ## documentation
+
+### jsl-avatar
+>API
+
+| props | type | remark | default value |
+|:-----:|:----:|:------:|:-------------:|
+| size |  Number | 头像的尺寸 | 25 |
+| img |  String | 头像的图片链接 | 'https://avatars2.githubusercontent.com/u/31515577?s=460&v=4' |
+>demo code
+```javascript
+<template>
+  <div class="avatar-demo-root">
+    <jsl-avatar class="avatar" />
+    <jsl-avatar class="avatar" size="55" />
+  </div>
+</template>
+```
+### jsl-button
+>API
+
+| props | type | remark | default value |
+|:-----:|:----:|:------:|:-------------:|
+| width |  Number | 按钮宽度 | 375 |
+| height |  Number | 按钮高度 | 57 |
+| radius |  Number | 按钮边框倒角弧度 | 30 |
+| text |  String | 按钮文字 | '按钮' |
+| color |  String | 按钮文字颜色 | '#FCFCFC' |
+| fontSize |  Number | 按钮文字大小 | 16 |
+| bgColor |  String | 按钮背景颜色 | '#517DF7' |
+
+
+>demo code
+```javascript
+<template>
+  <div class="button-demo-root">
+    <jsl-button
+      class="btn"
+      text="button"
+    />
+    <jsl-button
+      class="btn"
+      color="red"
+      bgColor="green"
+    />
+    <jsl-button
+      class="btn"
+      color="#000"
+      bgColor="#f00"
+      radius="10"
+      height="37"
+    />
+  </div>
+</template>
+```
+### jsl-close
+>API
+
+| props | type | remark | default value |
+|:-----:|:----:|:------:|:-------------:|
+| size |  Number | 关闭图标尺寸 | 15 |
+| circle |  Boolean | 关闭图标是否带圆圈 | false |
+
+>demo code
+```javascript
+<template>
+  <div class="close-demo-root">
+    <jsl-close class="close" />
+    <jsl-close
+      class="close"
+      circle
+      size="55"
+    />
+  </div>
+</template>
+```
 ### jsl-loading
 >API
 
@@ -181,6 +269,53 @@ Vue.use(JslLoading)
 | infoFontSize |  Number | 文字大小 | 14 |
 | infoHeight |  Number | 文字高度 | 25 |
 | infoLineHeight |  Number | 文字行高 | 25 |
+
+>demo code
+```javascript
+
+<template>
+ <div class="loading-demo-root">
+   <jsl-loading imgSize="25"/>
+ </div>
+</template>
+```
+### jsl-nav-bar
+>API
+
+| props | type | remark | default value |
+|:-----:|:----:|:------:|:-------------:|
+| title |  String | 导航条的标题 | '导航条' |
+
+>demo code
+```javascript
+<template>
+ <div class="navbar-demo-root">
+   <jsl-nav-bar/>
+ </div>
+</template>
+```
+
+### jsl-nomore-tip
+>API
+
+| props | type | remark | default value |
+|:-----:|:----:|:------:|:-------------:|
+| text |  String | 文字内容 | '亲，我们是有底线的哦～' |
+| lineWidth |  Number | 细线的长度 | 34 |
+
+>demo code
+```javascript
+<template>
+  <div class="nomore-tip-demo-root">
+    <jsl-nomore-tip class="demo" />
+    <jsl-nomore-tip
+      class="demo"
+      text="这是我的底线"
+      lineWidth="100"
+    />
+  </div>
+</template>
+```
 
 
 
