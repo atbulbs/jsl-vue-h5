@@ -1,15 +1,15 @@
 <template>
  <div class="navbar-demo-root">
-   <jsl-navbar/>
+   <jsl-nav-bar/>
  </div>
 </template>
 
 
 <script type="text/ecmascript-6">
-import JslNavbar from 'components/navbar/navbar'
+import JslNavBar from 'components/navbar/navbar'
 export default {
   components: {
-    JslNavbar
+    JslNavBar
   }
 }
 </script>
