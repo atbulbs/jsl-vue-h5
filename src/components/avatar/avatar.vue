@@ -13,13 +13,12 @@
 
 <script type="text/ecmascript-6">
 import { toVw } from 'libs/util'
-import defaultImg from './avatar.jpg'
 
 export default {
   props: {
     img: {
       type: String,
-      default: defaultImg
+      default: 'https://avatars2.githubusercontent.com/u/31515577?s=460&v=4'
     },
     size: {
       default: 25

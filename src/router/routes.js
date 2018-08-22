@@ -5,6 +5,7 @@ const ButtonDemo = () => import('pages/button-demo')
 const CloseDemo = () => import('pages/close-demo')
 const LoadingDemo = () => import('pages/loading-demo')
 const NavbarDemo = () => import('pages/navbar-demo')
+const NomoreTipDemo = () => import('pages/nomore-tip-demo')
 
 export default [
   {
@@ -62,6 +63,14 @@ export default [
     component: NavbarDemo,
     meta: {
       title: 'navbar 组件'
+    }
+  },
+  {
+    path: '/nomore-tip-demo',
+    name: 'nomore-tip-demo',
+    component: NomoreTipDemo,
+    meta: {
+      title: 'nomore-tip 组件'
     }
   },
   {

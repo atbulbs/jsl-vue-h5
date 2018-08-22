@@ -22,7 +22,8 @@ export default {
         'button-demo',
         'close-demo',
         'loading-demo',
-        'navbar-demo'
+        'navbar-demo',
+        'nomore-tip-demo'
       ]
     }
   },

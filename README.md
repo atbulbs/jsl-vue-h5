@@ -3,7 +3,7 @@
 
 > npm site: [https://www.npmjs.com/package/jsl-vue-h5](https://www.npmjs.com/package/jsl-vue-h5)
 
-## ps 开发与发布的相关代码与操作
+## 开发与发布的爬坑姿势
 
 生产时入口文件 src/components/index.js
 ```javascript

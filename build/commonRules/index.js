@@ -48,7 +48,7 @@ const commonRulesConfig = [
         loader: 'url-loader',
         options: {
           limit: 10000,
-          name: 'static/imgs/[name].[hash:8].[ext]'
+          name: 'static/imgs/[name].[ext]'
         }
       }
     ]
@@ -58,7 +58,7 @@ const commonRulesConfig = [
     loader: 'url-loader',
     options: {
       limit: 10000,
-      name: 'static/fonts/[name].[hash:8].[ext]'
+      name: 'static/fonts/[name].[ext]'
     }
   }
 ]
