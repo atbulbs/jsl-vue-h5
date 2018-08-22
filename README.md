@@ -3,7 +3,7 @@
 
 > npm site: [https://www.npmjs.com/package/jsl-vue-h5](https://www.npmjs.com/package/jsl-vue-h5)
 
-> code demo site: [https://www.npmjs.com/package/jsl-vue-h5-demo](https://www.npmjs.com/package/jsl-vue-h5-demo)
+> code demo: [https://www.npmjs.com/package/jsl-vue-h5-demo](https://www.npmjs.com/package/jsl-vue-h5-demo)
 
 ## 开发与发布的爬坑姿势
 

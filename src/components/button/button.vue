@@ -24,9 +24,6 @@ export default {
     primary: {
       default: '#2196F3'
     },
-    secondary: {
-
-    },
     text: {
       default: '按钮'
     },
