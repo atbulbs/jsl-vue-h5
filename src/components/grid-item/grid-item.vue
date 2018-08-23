@@ -6,7 +6,10 @@
       width: toVw($parent.width/$parent.column),
       height: toVw($parent.height/$parent.row),
       lineHeight: toVw($parent.height/$parent.row),
-      borderTop: 'none'
+      color: 'red',
+      borderBottom: `${ index >= $parent.column * ($parent.row -1 ) ? '1px solid #ccc' : 'none' }`,
+      borderTop: `${'1px solid #ccc'}`,
+      borderLeft: `${ index % $parent.column ? '1px solid #ccc' : 'none' }`
     }"
   >
     <slot></slot>
@@ -50,5 +53,4 @@ export default {
 .grid-item-root
   tac()
   inline()
-  border 5px solid #ccc
 </style>

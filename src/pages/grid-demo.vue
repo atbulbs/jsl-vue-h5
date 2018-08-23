@@ -38,4 +38,5 @@ export default {
   width 375px
   height 623px
   position absolute
+  padding-top 35px
 </style>
