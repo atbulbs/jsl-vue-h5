@@ -1,6 +1,6 @@
 const devServerConfig = {
   host: 'localhost',
-  port: 8007,
+  port: 8003,
   overlay: {
     errors: true
   },

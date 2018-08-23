@@ -6,6 +6,7 @@ const CloseDemo = () => import('pages/close-demo')
 const LoadingDemo = () => import('pages/loading-demo')
 const NavbarDemo = () => import('pages/navbar-demo')
 const NomoreTipDemo = () => import('pages/nomore-tip-demo')
+const GridDemo = () => import('pages/grid-demo')
 
 export default [
   {
@@ -23,6 +24,14 @@ export default [
     component: List,
     meta: {
       title: 'demo 列表'
+    }
+  },
+  {
+    path: '/grid-demo',
+    name: 'grid-demo',
+    component: GridDemo,
+    meta: {
+      title: 'grid 组件'
     }
   },
   {

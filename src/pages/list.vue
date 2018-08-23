@@ -23,7 +23,8 @@ export default {
         'close-demo',
         'loading-demo',
         'navbar-demo',
-        'nomore-tip-demo'
+        'nomore-tip-demo',
+        'grid-demo'
       ]
     }
   },
