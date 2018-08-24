@@ -237,18 +237,6 @@ export default {
   }
 }
 </script>
-
-
-<style scoped lang="stylus" rel="stylesheet/stylus">
-
-.grid-demo-root
-  width 375px
-  min-height 623px
-  position absolute
-  padding-bottom 35px
-  >.grid
-    margin-top 35px
-</style>
 ```
 
 ### jsl-btn-scalable-jump
