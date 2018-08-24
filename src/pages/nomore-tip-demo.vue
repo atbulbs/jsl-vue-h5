@@ -26,7 +26,7 @@ export default {
 
 .nomore-tip-demo-root
   width 375px
-  height 623px
+  min-height 623px
   position absolute
   >.demo
     margin 20px auto

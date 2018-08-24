@@ -37,7 +37,6 @@ export default {
       const curDom = this.$refs.root
       const curDomPar = curDom.parentNode
       this.index = getNodeIndex(curDomPar, curDom)
-      console.log(this.index)
     }
   },
   mounted () {

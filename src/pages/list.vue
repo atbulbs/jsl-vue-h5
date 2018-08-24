@@ -18,13 +18,14 @@ export default {
   data () {
     return {
       demoList: [
+        'btn-scalable-jump-demo',
+        'grid-demo',
         'avatar-demo',
         'button-demo',
         'close-demo',
         'loading-demo',
         'navbar-demo',
-        'nomore-tip-demo',
-        'grid-demo'
+        'nomore-tip-demo'
       ]
     }
   },

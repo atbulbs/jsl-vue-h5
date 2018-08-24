@@ -20,6 +20,6 @@ export default {
 
 .loading-demo-root
   width 375px
-  height 623px
+  min-height 623px
   position absolute
 </style>

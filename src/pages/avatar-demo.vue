@@ -22,7 +22,7 @@ export default {
 
 .avatar-demo-root
   width 375px
-  height 623px
+  min-height 623px
   position absolute
   >.avatar
     display block

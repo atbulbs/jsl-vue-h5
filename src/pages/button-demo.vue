@@ -24,11 +24,6 @@
 import JslButton from 'components/button/button'
 
 export default {
-  data () {
-    return {
-
-    }
-  },
   components: {
     JslButton
   }
@@ -41,7 +36,7 @@ export default {
 
 .button-demo-root
   width 375px
-  height 623px
+  min-height 623px
   position absolute
   >.btn
     margin-top 20px

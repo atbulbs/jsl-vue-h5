@@ -1,14 +1,27 @@
 <template>
  <div class="grid-demo-root">
-   <jsl-grid
-   >
-    <jsl-grid-item
-      v-for="(item, index) in list"
-      :key="index + 'grid-demo-item'"
+    <jsl-grid
+      class="grid"
+      :row="3"
+      :column="3"
     >
-      <div>{{ index }}</div>
-    </jsl-grid-item>
-   </jsl-grid>
+      <jsl-grid-item
+        v-for="(item, index) in list9"
+        :key="index + 'grid-demo-item'"
+      >
+        <div>{{ index }}</div>
+      </jsl-grid-item>
+    </jsl-grid>
+    <jsl-grid
+      class="grid"
+    >
+      <jsl-grid-item
+        v-for="(item, index) in list20"
+        :key="index + 'grid-demo-item'"
+      >
+        <div>{{ index }}</div>
+      </jsl-grid-item>
+    </jsl-grid>
  </div>
 </template>
 
@@ -20,7 +33,8 @@ import JslGridItem from 'components/grid-item/grid-item'
 export default {
   data () {
     return {
-      list: Array(20)
+      list9: Array(9),
+      list20: Array(20)
     }
   },
   components: {
@@ -36,7 +50,9 @@ export default {
 
 .grid-demo-root
   width 375px
-  height 623px
+  min-height 623px
   position absolute
-  padding-top 35px
+  padding-bottom 35px
+  >.grid
+    margin-top 35px
 </style>
