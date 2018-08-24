@@ -149,13 +149,16 @@ $ npm install jsl-vue-h5 --save
 // ...
 // ]
 ```
-## example
+## import and use it
 ```javascript
 // main.js
 import {
   JslAvatar,
+  JslBtnScalableJump,
   JslButton,
   JslClose,
+  JslGrid,
+  JslGridItem,
   JslLoading,
   JslNavBar,
   JslNomoreTip
@@ -163,8 +166,11 @@ import {
 import 'jsl-vue-h5/dist/jsl-vue-h5.min.css'
 
 Vue.use(JslAvatar)
+Vue.use(JslBtnScalableJump)
 Vue.use(JslButton)
 Vue.use(JslClose)
+Vue.use(JslGrid)
+Vue.use(JslGridItem)
 Vue.use(JslLoading)
 Vue.use(JslNavBar)
 Vue.use(JslNomoreTip)
@@ -179,7 +185,140 @@ Vue.use(JslNomoreTip)
 
 ## documentation
 
+### jsl-grid
+> API
+
+| props | type | remark | default value |
+|:-----:|:----:|:------:|:-------------:|
+| width |  Number | 栅格组件的宽 | 375 |
+| height |  Number | 栅格组件的高 | 375 |
+| row |  Number | 栅格组件的行数 | 4 |
+| column |  Number | 栅格组件的列数 | 5 |
+
+> demo code
+
+```javascript
+<template>
+ <div class="grid-demo-root">
+    <jsl-grid
+      class="grid"
+      :row="3"
+      :column="3"
+    >
+      <jsl-grid-item
+        v-for="(item, index) in list9"
+        :key="index + 'grid-demo-item-1'"
+      >
+        <div>{{ index }}</div>
+      </jsl-grid-item>
+    </jsl-grid>
+    <jsl-grid
+      class="grid"
+    >
+      <jsl-grid-item
+        v-for="(item, index) in list20"
+        :key="index + 'grid-demo-item-2'"
+      >
+        <div>{{ index }}</div>
+      </jsl-grid-item>
+    </jsl-grid>
+ </div>
+</template>
+
+
+<script type="text/ecmascript-6">
+
+export default {
+  data () {
+    return {
+      list9: Array(9),
+      list20: Array(20)
+    }
+  }
+}
+</script>
+
+
+<style scoped lang="stylus" rel="stylesheet/stylus">
+
+.grid-demo-root
+  width 375px
+  min-height 623px
+  position absolute
+  padding-bottom 35px
+  >.grid
+    margin-top 35px
+</style>
+```
+
+### jsl-btn-scalable-jump
+
+>API
+
+| props | type | remark | default value |
+|:-----:|:----:|:------:|:-------------:|
+| toPage |  undefined | 若为Number, 则go(num), 若为String, 则push此路由 | 375 |
+| query |  Object | 路由跳转携带的参数对象, 会拼接为查询字符串 | undefined |
+| text | String | 按钮的文字 | 'btn-scalable-jump' |
+| fontSize | Number | 按钮的文字大小 | 14 |
+| color | String | 按钮的文字颜色 | 14 |
+| bgImg | String | 按钮的背景图 | undefined |
+| bgColor | String | 按钮的背景颜色 | '#517DF7' |
+| radius | Number | 按钮的边框倒角弧度 | 12 |
+| width | Number | 按钮的宽度 | 200 |
+| height | Number | 按钮的高度 | 50 |
+| lineHeight | Number | 按钮的文字行度 | 50 |
+| top | Number | 按钮绝对定位的top值 | 50 |
+| left | Number | 按钮绝对定位的lef值 | window.Number((375 / 2).toFixed(5)) |
+
+
+>demo code
+
+```javascript
+<template>
+ <div class="btn-scalable-jump-demo-root">
+   <jsl-btn-scalable-jump
+    class="btn"
+    v-for="(item, index) in btnList"
+    :key="index + 'select'"
+    :toPage="item.toPage"
+    :query="item.query"
+    :top="item.top"
+    :text="'to'+ ' ' + item.toPage"
+   />
+ </div>
+</template>
+
+<script type="text/ecmascript-6">
+
+export default {
+  data () {
+    return {
+      btnList: [
+        {
+          top: 50,
+          toPage: -1
+        },
+        {
+          top: 250,
+          toPage: 'grid-demo',
+          query: {
+            id: '123abc'
+          }
+        },
+        {
+          top: 450,
+          toPage: 'button-demo'
+        }
+      ]
+    }
+  }
+}
+</script>
+```
+
 ### jsl-avatar
+
 >API
 
 | props | type | remark | default value |
