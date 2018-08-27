@@ -20,7 +20,7 @@ export function formatQuery (obj) {
 
 export function createVuePlugin (vuePugingName, vuePulugin) {
   return {
-    install: function (Vue) {
+    install (Vue) {
       if (typeof window !== 'undefined' && window.Vue) {
         Vue = window.Vue
       }
