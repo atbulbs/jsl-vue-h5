@@ -3,6 +3,8 @@
 
 > npm site: [https://www.npmjs.com/package/jsl-vue-h5](https://www.npmjs.com/package/jsl-vue-h5)
 
+> demo online: [https://8bulbs.github.io/jsl-vue-h5-demo-online/](https://8bulbs.github.io/jsl-vue-h5-demo-online/)
+
 > code demo: [https://github.com/8bulbs/jsl-vue-h5-demo](https://github.com/8bulbs/jsl-vue-h5-demo)
 
 ## import and use it
