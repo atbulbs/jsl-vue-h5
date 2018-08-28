@@ -11,6 +11,8 @@ import LoadingComponent from './loading/loading'
 import NavBarComponent from './navbar/navbar'
 import NomoreTipComponent from './nomore-tip/nomore-tip'
 
+import ToastPlugin from './toast'
+
 export const JslAvatar = createVuePlugin('JslAvatar', AvatarComponent)
 export const JslBtnScalableJump = createVuePlugin('JslBtnScalableJump', BtnScalableJump)
 export const JslButton = createVuePlugin('JslButton', ButtonComponent)
@@ -20,3 +22,4 @@ export const JslGridItem = createVuePlugin('JslGridItem', GridItemComponent)
 export const JslLoading = createVuePlugin('JslLoading', LoadingComponent)
 export const JslNavBar = createVuePlugin('JslNavBar', NavBarComponent)
 export const JslNomoreTip = createVuePlugin('JslNomoreTip', NomoreTipComponent)
+export const JslToast = ToastPlugin

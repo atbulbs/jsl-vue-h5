@@ -8,6 +8,7 @@ const NavbarDemo = () => import('pages/navbar-demo')
 const NomoreTipDemo = () => import('pages/nomore-tip-demo')
 const GridDemo = () => import('pages/grid-demo')
 const BtnScalableJumpDemo = () => import('pages/btn-scalable-jump-demo')
+const ToastDemo = () => import('pages/toast-demo')
 
 export default [
   {
@@ -32,7 +33,15 @@ export default [
     name: 'btn-scalable-jump-demo',
     component: BtnScalableJumpDemo,
     meta: {
-      title: 'btn-scalable-jump 组件'
+      title: 'btn-scalable-jump demo'
+    }
+  },
+  {
+    path: '/toast-demo',
+    name: 'toast-demo',
+    component: ToastDemo,
+    meta: {
+      title: 'toast demo'
     }
   },
   {
@@ -40,7 +49,7 @@ export default [
     name: 'grid-demo',
     component: GridDemo,
     meta: {
-      title: 'grid 组件'
+      title: 'grid demo'
     }
   },
   {
@@ -48,7 +57,7 @@ export default [
     name: 'avatar-demo',
     component: AvatarDemo,
     meta: {
-      title: 'avatar 组件'
+      title: 'avatar demo'
     }
   },
   {
@@ -56,7 +65,7 @@ export default [
     name: 'button-demo',
     component: ButtonDemo,
     meta: {
-      title: 'button 组件'
+      title: 'button demo'
     }
   },
   {
@@ -64,7 +73,7 @@ export default [
     name: 'close-demo',
     component: CloseDemo,
     meta: {
-      title: 'close 组件'
+      title: 'close demo'
     }
   },
   {
@@ -72,7 +81,7 @@ export default [
     name: 'loading-demo',
     component: LoadingDemo,
     meta: {
-      title: 'loading 组件'
+      title: 'loading demo'
     }
   },
   {
@@ -80,7 +89,7 @@ export default [
     name: 'navbar-demo',
     component: NavbarDemo,
     meta: {
-      title: 'navbar 组件'
+      title: 'navbar demo'
     }
   },
   {
@@ -88,7 +97,7 @@ export default [
     name: 'nomore-tip-demo',
     component: NomoreTipDemo,
     meta: {
-      title: 'nomore-tip 组件'
+      title: 'nomore-tip demo'
     }
   },
   {

@@ -6,11 +6,8 @@
 
 
 <script type="text/ecmascript-6">
-import JslNavBar from 'components/navbar/navbar'
+
 export default {
-  components: {
-    JslNavBar
-  }
 }
 </script>
 

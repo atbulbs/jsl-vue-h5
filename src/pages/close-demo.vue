@@ -11,20 +11,8 @@
 
 
 <script type="text/ecmascript-6">
-import JslClose from 'components/close/close'
 
 export default {
-  data () {
-    return {
-
-    }
-  },
-  methods: {
-
-  },
-  components: {
-    JslClose
-  }
 }
 </script>
 

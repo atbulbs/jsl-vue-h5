@@ -27,8 +27,6 @@
 
 
 <script type="text/ecmascript-6">
-import JslGrid from 'components/grid/grid'
-import JslGridItem from 'components/grid-item/grid-item'
 
 export default {
   data () {
@@ -36,10 +34,6 @@ export default {
       list9: Array(9),
       list20: Array(20)
     }
-  },
-  components: {
-    JslGrid,
-    JslGridItem
   }
 }
 </script>

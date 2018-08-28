@@ -11,12 +11,8 @@
 
 
 <script type="text/ecmascript-6">
-import JslNomoreTip from 'components/nomore-tip/nomore-tip'
 
 export default {
-  components: {
-    JslNomoreTip
-  }
 }
 </script>
 

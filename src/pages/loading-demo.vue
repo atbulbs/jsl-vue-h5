@@ -6,11 +6,9 @@
 
 
 <script type="text/ecmascript-6">
-import JslLoading from 'components/loading/loading'
+
 export default {
-  components: {
-    JslLoading
-  }
+
 }
 </script>
 

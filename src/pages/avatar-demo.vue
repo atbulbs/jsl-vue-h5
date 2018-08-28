@@ -7,12 +7,8 @@
 
 
 <script type="text/ecmascript-6">
-import JslAvatar from 'components/avatar/avatar'
 
 export default {
-  components: {
-    JslAvatar
-  }
 }
 </script>
 

@@ -12,12 +12,12 @@
 
 
 <script type="text/ecmascript-6">
-import JslButton from 'components/button/button'
 
 export default {
   data () {
     return {
       demoList: [
+        'toast-demo',
         'btn-scalable-jump-demo',
         'grid-demo',
         'avatar-demo',
@@ -28,9 +28,6 @@ export default {
         'nomore-tip-demo'
       ]
     }
-  },
-  components: {
-    JslButton
   }
 }
 </script>
@@ -40,6 +37,7 @@ export default {
 .list-root
   full-screen()
   position relative
+  padding-bottom 20px
   >.demo-list
     margin-top 20px
 </style>

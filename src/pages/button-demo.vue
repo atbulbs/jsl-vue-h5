@@ -21,12 +21,8 @@
 
 
 <script type="text/ecmascript-6">
-import JslButton from 'components/button/button'
 
 export default {
-  components: {
-    JslButton
-  }
 }
 </script>
 

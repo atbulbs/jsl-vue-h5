@@ -17,21 +17,14 @@
 
 
 <script type="text/ecmascript-6">
-import JslButton from 'components/button/button'
 
 export default {
   methods: {
     handleClick () {
       this.$router.push({
-        name: 'list',
-        params: {
-          id: 9527
-        }
+        name: 'list'
       })
     }
-  },
-  components: {
-    JslButton
   }
 }
 </script>

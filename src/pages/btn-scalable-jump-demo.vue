@@ -13,7 +13,6 @@
 </template>
 
 <script type="text/ecmascript-6">
-import JslBtnScalableJump from 'components/btn-scalable-jump/btn-scalable-jump'
 
 export default {
   data () {
@@ -36,9 +35,6 @@ export default {
         }
       ]
     }
-  },
-  components: {
-    JslBtnScalableJump
   }
 }
 </script>
