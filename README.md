@@ -7,6 +7,11 @@
 
 > code demo: [https://github.com/8bulbs/jsl-vue-h5-demo](https://github.com/8bulbs/jsl-vue-h5-demo)
 
+## install
+```bash
+$ npm install jsl-vue-h5 --save
+```
+
 ## import and use it
 ```javascript
 // main.js
@@ -473,11 +478,7 @@ $ npm publish
 ```
 每次发布时, 需要使用新的版本号, 修改package.json里的version, 或者删除之前的版本号再发布
 
-## install
-```bash
-$ npm install jsl-vue-h5 --save
-```
-## webpack config
+## tip: webpack config
 ```javascript
 // dev config > module > rules
 // rules: [
@@ -499,5 +500,4 @@ $ npm install jsl-vue-h5 --save
 // ...
 // ]
 ```
-
 

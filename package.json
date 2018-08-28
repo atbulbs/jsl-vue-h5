@@ -1,7 +1,7 @@
 {
   "name": "jsl-vue-h5",
-  "version": "0.0.19",
-  "description": "some Vue.js components and plugins for mobile H5 development",
+  "version": "0.0.20",
+  "description": "some Vue.js plugins for mobile H5 development",
   "author": "8bulbs <atbulbs@gmail.com>",
   "private": false,
   "main": "dist/jsl-vue-h5.min.js",
